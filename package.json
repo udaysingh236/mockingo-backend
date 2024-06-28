@@ -1,0 +1,35 @@
+{
+    "name": "mockingo-backend",
+    "version": "1.0.0",
+    "description": "Mock API provider",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "clean": "rimraf ./dist",
+        "dev": "npm run clean && tsc -p tsconfig.build.json && node dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/udaysingh236/mockingo-backend.git"
+    },
+    "author": "Uday Singh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/udaysingh236/mockingo-backend/issues"
+    },
+    "homepage": "https://github.com/udaysingh236/mockingo-backend#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.5.0",
+        "eslint": "^9.5.0",
+        "globals": "^15.6.0",
+        "prettier": "^3.3.2",
+        "rimraf": "^5.0.7",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.2",
+        "typescript-eslint": "^7.13.1"
+    },
+    "overrides": {
+        "eslint": "^9.5.0"
+    }
+}
